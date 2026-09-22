@@ -1,14 +1,16 @@
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import { View, Text, StyleSheet, Pressable, TextInput } from "react-native";
 import React from "react";
+import Feather from "@expo/vector-icons/Feather";
 
 const Header = () => {
   return (
     <View style={styles.header}>
       <View style={styles.logo} />
       <View style={styles.utilsContainer}>
-        <Pressable style={styles.btn}>
-          <Text>Search</Text>
-        </Pressable>
+        <View style={styles.searchContainer}>
+          <Feather name="search" size={24} color="black" />
+          <TextInput style={styles.input} />
+        </View>
         <Pressable style={styles.btn}>
           <Text>Cart</Text>
         </Pressable>
@@ -30,14 +32,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#2b78c0",
   },
   logo: {
-    width: 120,
-    height: 45,
+    width: 48,
+    height: 48,
+    borderRadius: "50%",
     backgroundColor: "#fff",
   },
   utilsContainer: {
     flexDirection: "row",
     gap: 10,
-    backgroundColor: "#fff",
     padding: 6,
   },
   btn: {
@@ -45,5 +47,15 @@ const styles = StyleSheet.create({
     borderColor: "#2b78c0",
     borderRadius: 6,
     padding: 6,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: "#2b78c0",
+    borderRadius: 6,
+    padding: 6,
+    backgroundColor: "#fafafa",
+  },
+  searchContainer: {
+    flexDirection: "row",
   },
 });
