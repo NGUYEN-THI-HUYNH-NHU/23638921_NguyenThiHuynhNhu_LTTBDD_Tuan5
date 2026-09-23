@@ -10,35 +10,41 @@ import BookGrid from "./src/gio2/bai2/BookGrid";
 import Challenge2 from "./src/gio2/challenge/Challenge2";
 import FloatingCartScreen from "./src/gio3/bai2/FloatingCard";
 import Challenge3 from "./src/gio3/challenge/Challenge3";
+import BookStoreScreen from "./src/gio4/bai1/BookStoreScreen";
+import BookDetailScreen from "./src/gio4/bai2/BookDetail";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* Gio 1 */}
-      {/* <Header /> */}
+    // <View style={styles.container}>
+    //   {/* Gio 1 */}
+    //   {/* <Header /> */}
 
-      {/* <FlatList
-        data={BOOKS}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <BookCard book={item} />}
-      /> */}
+    //   {/* <FlatList
+    //     data={BOOKS}
+    //     keyExtractor={(item) => item.id.toString()}
+    //     renderItem={({ item }) => <BookCard book={item} />}
+    //   /> */}
 
-      {/* <Challenge1 /> */}
+    //   {/* <Challenge1 /> */}
 
-      {/* Gio 2 */}
-      {/* <CategoryChips /> */}
+    //   {/* Gio 2 */}
+    //   {/* <CategoryChips /> */}
 
-      {/* <BookGrid /> */}
+    //   {/* <BookGrid /> */}
 
-      {/* <Challenge2 /> */}
+    //   {/* <Challenge2 /> */}
 
-      {/* Gio 3 */}
-      {/* <BookCard2 book={BOOKS.at(0)!} /> */}
+    //   {/* Gio 3 */}
+    //   {/* <BookCard2 book={BOOKS.at(0)!} /> */}
 
-      {/* <FloatingCartScreen /> */}
+    //   {/* <FloatingCartScreen /> */}
 
-      <Challenge3 />
-    </View>
+    //   {/* <Challenge3 /> */}
+    // </View>
+
+    // <BookStoreScreen />
+
+    // <BookDetailScreen />
   );
 }
 
