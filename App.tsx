@@ -14,6 +14,7 @@ import BookStoreScreen from "./src/gio4/bai1/BookStoreScreen";
 import BookDetailScreen from "./src/gio4/bai2/BookDetail";
 import BottomTabBar from "./src/gio5/bai1/BottomTabBar";
 import CartScreen from "./src/gio5/bai2/CartScreen";
+import HomeScreen from "./src/final/HomeScreen";
 
 export default function App() {
   return (
@@ -52,7 +53,9 @@ export default function App() {
     //   <BottomTabBar />
     // </View>
 
-    <CartScreen />
+    // <CartScreen />
+
+    <HomeScreen />
   );
 }
 
