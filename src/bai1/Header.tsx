@@ -6,13 +6,19 @@ const Header = () => {
   return (
     <View style={styles.header}>
       <View style={styles.logo} />
+
       <View style={styles.utilsContainer}>
         <View style={styles.searchContainer}>
-          <Feather name="search" size={24} color="black" />
-          <TextInput style={styles.input} />
+          <Feather name="search" size={18} color="black" />
+          <TextInput
+            style={styles.input}
+            placeholder="Tìm kiếm..."
+            placeholderTextColor="#888"
+          />
         </View>
-        <Pressable style={styles.btn}>
-          <Text>Cart</Text>
+
+        <Pressable>
+          <Feather name="shopping-cart" size={24} color="#fff" />
         </Pressable>
       </View>
     </View>
@@ -27,35 +33,48 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: 16,
+    paddingHorizontal: 16,
     height: 56,
     backgroundColor: "#2b78c0",
   },
   logo: {
     width: 48,
     height: 48,
-    borderRadius: "50%",
+    borderRadius: 24,
     backgroundColor: "#fff",
   },
   utilsContainer: {
     flexDirection: "row",
+    alignItems: "center",
     gap: 10,
-    padding: 6,
+  },
+  searchContainer: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#fafafa",
+    borderWidth: 1,
+    borderColor: "#2b78c0",
+    borderRadius: 6,
+    paddingHorizontal: 8,
+    height: 36,
+  },
+  input: {
+    flex: 1,
+    marginLeft: 6,
+    paddingVertical: 0,
+    fontSize: 14,
   },
   btn: {
     borderWidth: 1,
     borderColor: "#2b78c0",
     borderRadius: 6,
-    padding: 6,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    backgroundColor: "#f0f0f0",
   },
-  input: {
-    borderWidth: 1,
-    borderColor: "#2b78c0",
-    borderRadius: 6,
-    padding: 6,
-    backgroundColor: "#fafafa",
-  },
-  searchContainer: {
-    flexDirection: "row",
+  btnText: {
+    fontWeight: "600",
+    fontSize: 14,
   },
 });
