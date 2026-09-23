@@ -1,7 +1,7 @@
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import React from "react";
 import Header from "../bai1/Header";
-import { BOOKS } from "../data/books";
+import { BOOKS } from "../../data/books";
 import BookCard from "../bai2/BookCard";
 
 const Challenge1 = () => {
