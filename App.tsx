@@ -1,11 +1,19 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import Header from "./src/bai1/Header";
+import BookCard from "./src/bai2/BookCard";
+import { BOOKS } from "./src/data/books";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header />
+      {/* <Header /> */}
+
+      <FlatList
+        data={BOOKS}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <BookCard book={item} />}
+      />
     </View>
   );
 }
