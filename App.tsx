@@ -13,6 +13,7 @@ import Challenge3 from "./src/gio3/challenge/Challenge3";
 import BookStoreScreen from "./src/gio4/bai1/BookStoreScreen";
 import BookDetailScreen from "./src/gio4/bai2/BookDetail";
 import BottomTabBar from "./src/gio5/bai1/BottomTabBar";
+import CartScreen from "./src/gio5/bai2/CartScreen";
 
 export default function App() {
   return (
@@ -47,9 +48,11 @@ export default function App() {
 
     // <BookDetailScreen />
 
-    <View style={styles.container}>
-      <BottomTabBar />
-    </View>
+    // <View style={styles.container}>
+    //   <BottomTabBar />
+    // </View>
+
+    <CartScreen />
   );
 }
 
