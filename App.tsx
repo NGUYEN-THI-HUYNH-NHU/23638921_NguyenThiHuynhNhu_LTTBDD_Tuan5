@@ -5,10 +5,12 @@ import BookCard from "./src/gio1/bai2/BookCard";
 import { BOOKS } from "./src/data/books";
 import Challenge1 from "./src/gio1/challenge1/Challenge1";
 import CategoryChips from "./src/gio2/bai1/CategoryChips";
+import BookGrid from "./src/gio2/bai2/BookGrid";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      {/* Gio 1 */}
       {/* <Header /> */}
 
       {/* <FlatList
@@ -19,7 +21,10 @@ export default function App() {
 
       {/* <Challenge1 /> */}
 
-      <CategoryChips />
+      {/* Gio 2 */}
+      {/* <CategoryChips /> */}
+
+      <BookGrid />
     </View>
   );
 }
