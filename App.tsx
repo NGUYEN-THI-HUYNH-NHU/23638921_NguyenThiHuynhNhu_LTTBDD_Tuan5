@@ -1,9 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import { FlatList, StyleSheet, Text, View } from "react-native";
-import Header from "./src/bai1/Header";
-import BookCard from "./src/bai2/BookCard";
+import Header from "./src/gio1/bai1/Header";
+import BookCard from "./src/gio1/bai2/BookCard";
 import { BOOKS } from "./src/data/books";
-import Challenge1 from "./src/challenge1/Challenge1";
+import Challenge1 from "./src/gio1/challenge1/Challenge1";
+import CategoryChips from "./src/gio2/bai1/CategoryChips";
 
 export default function App() {
   return (
@@ -16,7 +17,9 @@ export default function App() {
         renderItem={({ item }) => <BookCard book={item} />}
       /> */}
 
-      <Challenge1 />
+      {/* <Challenge1 /> */}
+
+      <CategoryChips />
     </View>
   );
 }

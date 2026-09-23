@@ -117,9 +117,9 @@ export const BOOKS: Book[] = [
 
 export const CATEGORIES = [
   "Tất cả",
-  "Chính trị & Kinh tế",
+  "Tâm lý",
   "Khoa học thường thức",
-  "Tâm lý học",
+  "Chính trị & Kinh tế",
   "Tự truyện & Hồi ký",
   "Văn học & Tiểu thuyết",
 ];
