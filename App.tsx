@@ -3,9 +3,10 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 import Header from "./src/gio1/bai1/Header";
 import BookCard from "./src/gio1/bai2/BookCard";
 import { BOOKS } from "./src/data/books";
-import Challenge1 from "./src/gio1/challenge1/Challenge1";
+import Challenge1 from "./src/gio1/challenge/Challenge1";
 import CategoryChips from "./src/gio2/bai1/CategoryChips";
 import BookGrid from "./src/gio2/bai2/BookGrid";
+import Challenge2 from "./src/gio2/challenge/Challenge2";
 
 export default function App() {
   return (
@@ -24,7 +25,9 @@ export default function App() {
       {/* Gio 2 */}
       {/* <CategoryChips /> */}
 
-      <BookGrid />
+      {/* <BookGrid /> */}
+
+      <Challenge2 />
     </View>
   );
 }
