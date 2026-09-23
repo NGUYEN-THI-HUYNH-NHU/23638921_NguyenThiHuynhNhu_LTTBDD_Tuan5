@@ -21,6 +21,11 @@ const BookCard = ({ book, onPress }: BookCardProps) => {
           style={styles.coverImage}
           resizeMode="cover"
         />
+        {book.discount && (
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>{book.discount}</Text>
+          </View>
+        )}
       </View>
 
       <View style={styles.infoContainer}>
@@ -54,6 +59,7 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.98 }],
   },
   imageContainer: {
+    position: "relative",
     width: "100%",
     aspectRatio: 3 / 4,
     borderRadius: 6,
@@ -82,5 +88,19 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "bold",
     color: "#2b78c0",
+  },
+  badge: {
+    position: "absolute",
+    top: 6,
+    left: 6,
+    backgroundColor: "#e74c3c",
+    paddingHorizontal: 4,
+    paddingVertical: 1,
+    borderRadius: 3,
+  },
+  badgeText: {
+    color: "#fff",
+    fontSize: 10,
+    fontWeight: "bold",
   },
 });
