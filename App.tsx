@@ -9,6 +9,7 @@ import CategoryChips from "./src/gio2/bai1/CategoryChips";
 import BookGrid from "./src/gio2/bai2/BookGrid";
 import Challenge2 from "./src/gio2/challenge/Challenge2";
 import FloatingCartScreen from "./src/gio3/bai2/FloatingCard";
+import Challenge3 from "./src/gio3/challenge/Challenge3";
 
 export default function App() {
   return (
@@ -34,7 +35,9 @@ export default function App() {
       {/* Gio 3 */}
       {/* <BookCard2 book={BOOKS.at(0)!} /> */}
 
-      <FloatingCartScreen />
+      {/* <FloatingCartScreen /> */}
+
+      <Challenge3 />
     </View>
   );
 }
